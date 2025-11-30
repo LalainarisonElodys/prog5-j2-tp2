@@ -17,6 +17,28 @@ public class Rental {
         this.endDate = endDate;
         this.pricePerDay = pricePerDay;
     }
+
+    public Locatable getItem() {
+        return item;
+    }
+
+    public Rentable getRenter() {
+        return renter;
+    }
+
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    public LocalDate getEndDate() {
+        return endDate;
+    }
+
+    public double getPricePerDay() {
+        return pricePerDay;
+
+    }
+
     public long getDurationDays(){
         return ChronoUnit.DAYS.between(startDate, endDate);
     }
