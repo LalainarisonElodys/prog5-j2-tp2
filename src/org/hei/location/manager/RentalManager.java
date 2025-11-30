@@ -14,8 +14,8 @@ public class RentalManager {
             throw new RentalException("Rental cannot be null");
         }
         logger.info("Renting: " + rental.getItem().getName() +
-                "to" + rental.getRenter().getRenterType() +
-                "for" + rental.getDurationDays() + "days" +
+                " to " + rental.getRenter().getRenterType() +
+                " for " + rental.getDurationDays() + "days " +
                 "total coast: " + rental.getTotalPrice());
     }
 }
