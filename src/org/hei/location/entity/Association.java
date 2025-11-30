@@ -1,20 +1,20 @@
 package org.hei.location.entity;
 
 public class Association implements Rentable {
-    private String AssociationName;
-    private String AssociationPhone;
+    private String associationName;
+    private String associationPhone;
 
     public Association(String associationName, String associationPhone) {
-        AssociationName = associationName;
-        AssociationPhone = associationPhone;
+        associationName = associationName;
+        associationPhone = associationPhone;
     }
 
     public String getAssociationName() {
-        return AssociationName;
+        return associationName;
     }
 
     public String getAssociationPhone() {
-        return AssociationPhone;
+        return associationPhone;
     }
 
     @Override
