@@ -1,16 +1,21 @@
 package org.hei.location.entity;
 
-public class House implements Rentable{
-    private final String adress;
-    private final double pricePerMonth;
+public class House implements Locatable {
+    private String address;
+    private double value;
 
-    public House(String adress, double pricePerMonth) {
-        this.adress = adress;
-        this.pricePerMonth = pricePerMonth;
+    public House(String address, double value) {
+        this.address = address;
+        this.value = value;
     }
 
     @Override
-    public double getRentalPrice() {
-        return pricePerMonth;
+    public String getName() {
+        return address;
+    }
+
+    @Override
+    public double getValue() {
+        return value;
     }
 }

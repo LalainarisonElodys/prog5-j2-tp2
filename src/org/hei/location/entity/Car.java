@@ -1,14 +1,21 @@
 package org.hei.location.entity;
 
-public class Car implements Rentable{
-    private final double carPricePerDay;
+public class Car implements Locatable {
+    private String name;
+    private double value;
 
-    public Car(double carPricePerDay) {
-        this.carPricePerDay = carPricePerDay;
+    public Car(String name, double value) {
+        this.name = name;
+        this.value = value;
     }
 
     @Override
-    public double getRentalPrice() {
-        return carPricePerDay;
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public double getValue() {
+        return value;
     }
 }

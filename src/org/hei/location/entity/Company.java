@@ -1,6 +1,6 @@
 package org.hei.location.entity;
 
-public class Company implements Renter{
+public class Company implements Rentable {
     private String companyName;
     private String companyAddress;
     private String companyPhone;
@@ -10,13 +10,21 @@ public class Company implements Renter{
         this.companyAddress = companyAddress;
         this.companyPhone = companyPhone;
     }
-    @Override
-    public String getName() {
+
+    public String getCompanyName() {
         return companyName;
     }
 
+    public String getCompanyAddress() {
+        return companyAddress;
+    }
+
+    public String getCompanyPhone() {
+        return companyPhone;
+    }
+
     @Override
-    public String getType() {
-        return "company";
+    public String getRenterType() {
+        return "Company";
     }
 }

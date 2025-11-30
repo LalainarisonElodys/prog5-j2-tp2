@@ -1,17 +1,17 @@
 package org.hei.location.entity;
 
-public class Bike implements Locatable {
-    private String type;
+public class Computer implements Locatable {
+    private String model;
     private double price;
 
-    public Bike(String type, double price) {
-        this.type = type;
+    public Computer(String model, double price) {
+        this.model = model;
         this.price = price;
     }
 
     @Override
     public String getName() {
-        return type;
+        return model;
     }
 
     @Override

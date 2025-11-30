@@ -1,21 +1,24 @@
 package org.hei.location.entity;
 
-public class Association implements Renter{
-    private String name;
-    private String phone;
+public class Association implements Rentable {
+    private String AssociationName;
+    private String AssociationPhone;
 
-    public Association(String name, String phone) {
-        this.name = name;
-        this.phone = phone;
+    public Association(String associationName, String associationPhone) {
+        AssociationName = associationName;
+        AssociationPhone = associationPhone;
+    }
+
+    public String getAssociationName() {
+        return AssociationName;
+    }
+
+    public String getAssociationPhone() {
+        return AssociationPhone;
     }
 
     @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public String getType() {
+    public String getRenterType() {
         return "Association";
     }
 }
